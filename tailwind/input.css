@@ -1,0 +1,16 @@
+@import "tailwindcss";
+.container {
+  @apply mx-auto px-4;
+}
+.rrf-top-bar a {
+  @apply underline font-bold;
+}
+.main-menu {
+  @apply flex justify-center;
+}
+.main-menu li a {
+  @apply block py-2 px-4;
+}
+.rrf-section-title {
+  @apply font-bold text-5xl pb-12;
+}

@@ -1,0 +1,48 @@
+<section class="bg-black py-12">
+  <div class="container">
+    <div class="flex flex-col md:flex-row space-y-4 justify-between items-center gap-4">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'company_logo' %}
+            {% comment %} <img src="{{ 'company-' | append: block.settings | append: '.png' | asset_url }}" alt=""> {% endcomment %}
+            {% comment %} <img src="{{ block.settings.image | asset_url }}" alt=""> {% endcomment %}
+            <a href="{{ block.settings.link }}">{{ block.settings.image | image_url: width: 100 | image_tag }}</a>
+          {% else %}
+
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "company",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "blocks": [
+    {
+      "type": "company_logo",
+      "name": "Company Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Upload Image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Image Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "company"
+    }
+  ]
+}
+{% endschema %}

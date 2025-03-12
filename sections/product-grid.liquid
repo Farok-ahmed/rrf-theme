@@ -1,0 +1,88 @@
+<section class="py-20">
+  {% comment %} NEW ARRIVALS section start {% endcomment %}
+  <div class="container">
+    <div>
+      <h2
+        class="rrf-section-title "
+        style="text-align: {{section.settings.alignment}}; color:{{ section.settings.color }}"
+      >
+        {{ section.settings.title }}
+      </h2>
+      <div class="flex -mx-4">
+        {% comment %} product items {% endcomment %}
+        {% for product in section.settings.collection.products %}
+          <div
+            class="w-1/4 px-4"
+          >
+            <div class="text-black">
+              {% render 'single-product', product: product %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="text-center py-6">
+        <button
+          style="background-color:{{ section.settings.bg_color }}"
+          class="rounded-full font-medium hover:bg-black hover:text-white transition-all duration-200 py-2.5  px-8 text-balance bg-white border "
+        >
+          <a href="{{ section.settings.url }}">{{ section.settings.link_text }}</a>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Product Grid",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "New Arrivals"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "url",
+      "id": "url",
+      "label": "Link"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Button Text",
+      "default": "View All"
+    },
+    {
+      "type": "text_alignment",
+      "id": "alignment",
+      "label": "Text alignment",
+      "default": "center"
+    },
+    {
+      "type": "color",
+      "id": "color",
+      "label": "Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Grid"
+    }
+  ]
+}
+{% endschema %}

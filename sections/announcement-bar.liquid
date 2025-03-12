@@ -1,0 +1,38 @@
+<div
+  class=" py-2 text-white text-center text-sm rrf-top-bar"
+  style="color:{{ section.settings.text_color }}; background-color:{{ section.settings.bg_color }} "
+>
+  <div class="container">
+    {{ section.settings.text }}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Announcement Bar",
+  "enabled_on": {
+    "groups": ["header"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "text",
+      "default": "Sign up and get 20% off to your first order.Sign Up Now",
+      "label": "Text"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#000000"
+    }
+  ],
+  "presets": [{ "name": "Announcement Bar" }]
+}
+{% endschema %}

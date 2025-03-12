@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Integral CF";
+  src: url("IntegralCF-Bold.woff2") format("woff2"),
+    url("IntegralCF-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("Satoshi-Regular.woff2") format("woff2"),
+    url("Satoshi-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("Satoshi-Medium.woff2") format("woff2"),
+    url("Satoshi-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("Satoshi-Bold.woff2") format("woff2"),
+    url("Satoshi-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+body,
+.product-title {
+  font-family: "Satoshi", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Integral CF", sans-serif;
+  font-weight: bold;
+}
+.testimoial-carousel > svg {
+  position: absolute;
+  right: 37px;
+  top: -34px;
+  cursor: pointer;
+}
+
+.testimoial-carousel > svg:last-child {
+  right: 0;
+}
+.active {
+  color: #000000;
+  font-weight: medium;
+  border-bottom: 2px solid #000000;
+}
