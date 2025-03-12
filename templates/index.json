@@ -70,8 +70,8 @@
       "type": "product-grid",
       "settings": {
         "title": "New Arrivals",
-        "collection": "",
-        "url": "",
+        "collection": "new-arrivals",
+        "url": "shopify://collections/new-arrivals",
         "link_text": "View All",
         "alignment": "center",
         "color": "#000000",
