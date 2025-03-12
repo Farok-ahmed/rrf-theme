@@ -1,20 +1,97 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
-      "type": "hero"
+      "type": "hero",
+      "settings": {
+        "heading": "FIND CLOTHES THAT MATCHES YOUR STYLE",
+        "body": "Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.",
+        "url": "",
+        "link_text": "Shop Now"
+      }
     },
     "company": {
-      "type": "company"
+      "type": "company",
+      "blocks": {
+        "company_logo_XQcyLR": {
+          "type": "company_logo",
+          "settings": {
+            "image": "shopify://shop_images/company-5.png",
+            "link": ""
+          }
+        },
+        "company_logo_PVjh8r": {
+          "type": "company_logo",
+          "settings": {
+            "image": "shopify://shop_images/company-1.png",
+            "link": ""
+          }
+        },
+        "company_logo_kx7AjD": {
+          "type": "company_logo",
+          "settings": {
+            "image": "shopify://shop_images/company-4.png",
+            "link": ""
+          }
+        },
+        "company_logo_6eGixM": {
+          "type": "company_logo",
+          "settings": {
+            "image": "shopify://shop_images/company-2.png",
+            "link": ""
+          }
+        },
+        "company_logo_FpQXnc": {
+          "type": "company_logo",
+          "settings": {
+            "image": "shopify://shop_images/company-3.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "company_logo_XQcyLR",
+        "company_logo_PVjh8r",
+        "company_logo_kx7AjD",
+        "company_logo_6eGixM",
+        "company_logo_FpQXnc"
+      ],
+      "settings": {}
     },
     "product_grid": {
-      "type": "product-grid"
+      "type": "product-grid",
+      "settings": {
+        "title": "New Arrivals",
+        "collection": "",
+        "url": "",
+        "link_text": "View All",
+        "alignment": "center",
+        "color": "#000000",
+        "bg_color": ""
+      }
     },
     "category_box": {
-      "type": "category-box"
+      "type": "category-box",
+      "settings": {}
     },
     "testimoial": {
-      "type": "testimoial"
+      "type": "testimoial",
+      "settings": {}
     }
   },
-  "order": ["hero", "company", "product_grid", "category_box", "testimoial"]
+  "order": [
+    "hero",
+    "company",
+    "product_grid",
+    "category_box",
+    "testimoial"
+  ]
 }
